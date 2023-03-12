@@ -14,7 +14,7 @@ defineProps({
         <nav class="navbar fixed-top bg-dark justify-content-center">
             <ul class="nav justify-content-center">
                 <li class="nav-item active">
-                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    <a class="nav-link" href="/">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/about">About</a>
@@ -23,7 +23,7 @@ defineProps({
                     <img src="img/logo.svg " alt="YNV-logo"  width="45" height="45"/>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/project">Project</a>
+                    <a class="nav-link active" href="/project" aria-current="page">Project</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/contact">Contact</a>
@@ -31,34 +31,14 @@ defineProps({
             </ul>
         </nav>
 
-      
-
     <div class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
     
-        <div class="container text-center justify-content-center">
-  <div class="row justify-content-center">
-    <div class="col justify-content-center">
-      <img src="img/yovan-1.png" alt="YNV-logo"  width="400" height="300"/>
-    </div>
-    <div class="col">
-        <img src="img/logo.svg" alt="YNV-logo"  width="300" height="300"/>
-    </div>
-  </div>
-  </div>
+        <div class="max-w-7xl mx-auto p-6 lg:p-8">
+         <h1 class="display-1 text-white">Mis poryectos</h1>
+        </div>
         
     </div>
 
- <!-- Navbar content 
- <div v-if="canLogin" class="sm:fixed sm:top-0 sm:right-0 p-6 text-right">
-                <Link v-if="$page.props.auth.user" :href="route('dashboard')" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Dashboard</Link>
-
-                <template v-else>
-                    <Link :href="route('login')" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Log in</Link>
-
-                    <Link v-if="canRegister" :href="route('register')" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Register</Link>
-                </template>
-            </div>
--->
 </template>
 
 <style>
